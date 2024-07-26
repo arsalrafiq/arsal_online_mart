@@ -1,0 +1,3 @@
+[submodule "zia-mart"]
+	path = zia-mart
+	url = https://github.com/arsalrafiq/zia-mart.git
