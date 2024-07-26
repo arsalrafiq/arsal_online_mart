@@ -1,6 +1,6 @@
 # 02_kafka_messaging
 
-### AIOKafkaProducer
+### AIOKafkaProducer and consumer
 
 AIOKafkaProducer is a high-level, asynchronous message producer.
 
