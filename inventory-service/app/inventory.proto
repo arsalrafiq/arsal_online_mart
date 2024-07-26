@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+enum OperationType {
+    CREATE = 0;
+    UPDATE = 1;
+    DELETE = 2;
+}
+message InventoryItem {
+  int32 id = 1;
+  int32 product_id = 2;
+  int32 variant_id = 3;
+  int32 quantity = 4;
+  string status = 5;
+}

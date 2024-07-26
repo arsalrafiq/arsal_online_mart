@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package payment;
+
+enum PaymentStatus {
+  PENDING = 0;
+  PROCESSING = 1;
+  SHIPPED = 2;
+  DELIVERED = 3;
+  CANCELED = 4;
+}
+
+message PaymentForm {
+  int32 order_id = 1;
+  double total_price = 2; // Use double for decimal numbers
+  string payment_method_id = 3;
+  AdvancePaymentForm advance_payment = 4;
+}
+
+message AdvancePaymentForm {
+  double advance_price = 1; // Use double for decimal numbers
+  string advance_payment_method_id = 2;
+}
+
+message RemainingPaymentModel {
+  string payment_method_id = 1;
+  double remaining_balance = 2; // Use double for decimal numbers
+}
