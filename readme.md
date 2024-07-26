@@ -48,4 +48,4 @@ async def consume_messages():
 asyncio.create_task(consume_messages())
 ```
 
-https://github.com/aio-libs/aiokafka
+https://github.com/aio-libs/aiokafka"# online_mart_project" 
